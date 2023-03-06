@@ -52,7 +52,7 @@ async function renderWatchLater(){
 async function getMovies(watchLater){
     let moviesData = []
     for (let title of watchLater){
-        await fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=55460719&t=${title}`)
+        await fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=55460719&t=${title}`)
                      .then(res=>res.json()).then(data => moviesData.push(data))
      }
  

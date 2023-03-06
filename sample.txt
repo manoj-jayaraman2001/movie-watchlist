@@ -1,0 +1,22 @@
+moviesHtml += `
+        <div class="movie-item">
+            <img
+            src= ${movie.Poster}
+            alt= "poster"
+            />
+            <div class="movie-desc">
+                <p>${movie.Title} <span class="imdb-rating">⭐ ${movie.imdbRating}</span></p>
+                <div class="group">
+                    <p>${movie.Runtime}</p>
+                    <p>${movie.Genre}</p>
+                    <p id="watch">
+                    <i class="fa-solid fa-circle-plus"></i> Watchlist
+                    </p>
+                </div>
+                <p style="font-size: 13px; color: #6B7280;">
+                    ${movie.Plot}
+                </p>
+            </div>
+        </div>
+        <hr style="width: 27.5rem;">
+        `

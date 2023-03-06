@@ -85,7 +85,7 @@ async function renderMovies(){
 
 async function moviesData(movieName){
 
-    let searchPromise = await fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=55460719&s=${movieName}`)
+    let searchPromise = await fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=55460719&s=${movieName}`)
     let searchPromise2 = await searchPromise.json()
     let data =  searchPromise2
     if(data.length == 0){
@@ -95,7 +95,7 @@ async function moviesData(movieName){
     let moviesData = []
     console.log(movieTitles)
     for (let title of movieTitles){
-       await fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=55460719&t=${title}`)
+       await fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=55460719&t=${title}`)
                     .then(res=>res.json()).then(data => moviesData.push(data))
     }
 
