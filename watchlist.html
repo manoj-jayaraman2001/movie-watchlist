@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Movie WatchList</title>
+  </head>
+  <body>
+    <div class="content">
+      <header>
+        <p class="Big">My Watchlist</p>
+        <a class="small" href="index.html">Search for movies</a>
+      </header>
+      <section style="margin-top: 4rem">
+        <div id="watchList"></div>
+        <div id="nothing" style="display: none; font-size: 1em; color: gray; text-align: center;">
+          No movies in the watch list
+        </div>
+      </section>
+    </div>
+    <script src="watchlist.js" type="module"></script>
+  </body>
+</html>
